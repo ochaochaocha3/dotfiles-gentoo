@@ -37,5 +37,5 @@ Linux 用 dotfiles。対象プログラムは
 
         ```bash
         cd ~/.vim/bundle/vimproc
-        make -f make_mac.mak
+        make -f make_unix.mak
         ```
