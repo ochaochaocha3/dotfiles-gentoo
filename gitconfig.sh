@@ -13,3 +13,6 @@ git config --global core.excludesfile "~/.gitignore"
 
 # git push のデフォルトの挙動を simple モードにする
 git config --global push.default simple
+
+# ターミナルへの出力に色をつける
+git config --global color.ui true
