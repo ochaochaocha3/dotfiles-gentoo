@@ -1,0 +1,8 @@
+# /etc/skel/.bash_profile
+
+# This file is sourced by bash for login shells.  The following line
+# runs your .bashrc and is recommended by the bash info pages.
+export LC_ALL="ja_JP.UTF-8"
+export LANG="ja_JP.UTF-8"
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc

@@ -17,6 +17,8 @@ Gentoo Linux 用 dotfiles。対象プログラムは
     
     ```bash
     # clone したディレクトリで
+    ln -s `pwd`/_bash_profile ~/.bash_profile
+    ln -s `pwd`/_bashrc ~/.bashrc
     ln -s `pwd`/_vimrc ~/.vimrc
     ln -s `pwd`/_gvimrc ~/.gvimrc
     ln -s `pwd`/_vim ~/.vim
