@@ -22,7 +22,11 @@ export HISTCONTROL=ignoredups:ignorespace
 
 # プロンプトに色を付ける
 # Custom bash prompt via kirsle.net/wizards/ps1.html
-export PS1="\[$(tput bold)\]\[$(tput setaf 2)\]\u@\h\[$(tput setaf 7)\]:\[$(tput setaf 4)\]\W\[$(tput setaf 7)\]\$ \[$(tput sgr0)\]"
+if [[ $EUID == 0 ]]; then
+    export PS1="\\[$(tput bold)\\]\\[$(tput setaf 1)\\]\\u@\\h\\[$(tput setaf 7)\\]:\\[$(tput setaf 4)\\]\\W\\[$(tput setaf 7)\\]\\$ \\[$(tput sgr0)\\]"
+else
+    export PS1="\\[$(tput bold)\\]\\[$(tput setaf 2)\\]\\u@\\h\\[$(tput setaf 7)\\]:\\[$(tput setaf 4)\\]\\W\\[$(tput setaf 7)\\]\\$ \\[$(tput sgr0)\\]"
+fi
 
 # コマンドの色のサポートを有効にする
 alias ls='ls --color=auto'
