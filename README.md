@@ -1,6 +1,6 @@
 Dotfiles for OS X
 ==================
-Linux 用 dotfiles。対象プログラムは
+Gentoo Linux 用 dotfiles。対象プログラムは
 
 * Vim
 * Vimperator
@@ -18,6 +18,7 @@ Linux 用 dotfiles。対象プログラムは
     ```bash
     # clone したディレクトリで
     ln -s `pwd`/_vimrc ~/.vimrc
+    ln -s `pwd`/_gvimrc ~/.gvimrc
     ln -s `pwd`/_vim ~/.vim
     ln -s `pwd`/_vimperatorrc ~/.vimperatorrc
     ln -s `pwd`/_gitignore ~/.gitignore
