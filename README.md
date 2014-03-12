@@ -1,5 +1,5 @@
-Dotfiles for OS X
-==================
+Dotfiles for Gentoo Linux
+=========================
 Gentoo Linux 用 dotfiles。対象プログラムは
 
 * Vim
